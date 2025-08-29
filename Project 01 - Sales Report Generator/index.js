@@ -85,3 +85,4 @@ ${getTop(products, 5)}
 ----------------------------------------`;
 
 fs.writeFileSync("output.txt", result, "utf-8");
+console.log("output.txt created.");
