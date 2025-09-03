@@ -5,53 +5,58 @@ const { totalmem } = require("os");
 const data = fs.readFileSync("./classData.json", "utf8");
 const studentData = JSON.parse(data);
 
-// console.log(studentData);
-let total = 0;
-let percentage = 0;
-let grade = null;
-let name = null;
-let info = "";
-let totalMarks = 0;
-let avegragePercentage = 0;
+let studentperformance = "";
+let totalPercentage = 0;
+let averagePercentage = 0;
+let topPerformer = null;
+let highPercentage = 0;
+const below70 = [];
+const below75Attendance = [];
 
-studentData.forEach(function (stu_info, i) {
-  name = stu_info.name;
-  id = stu_info.id;
-  total = Object.values(stu_info.marks).reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0
-  );
-  totalMarks += total;
-  percentage = (total * 100) / 300;
-  studentData.percentage = per;
-  if (percentage > 75) {
-    grade = "A";
-  } else if (percentage > 55 && percentage <= 75) {
-    grade = "B";
-  } else if (percentage > 30 && percentage <= 55) {
-    grade = "C";
-  } else if (percentage <= 30) {
-    grade = "D";
+studentData.forEach(function (student) {
+  const { id, name, marks, attendance } = student;
+  const total = Object.values(student.marks).reduce((acc, ele) => acc + ele, 0);
+  const percentage =
+    (total / (Object.values(student.marks).length * 100)) * 100;
+
+  if (percentage > 75) grade = "A";
+  else if (percentage > 55 && percentage <= 75) grade = "B";
+  else if (percentage > 30 && percentage <= 55) grade = "C";
+  else if (percentage <= 30) grade = "D";
+
+  totalPercentage += percentage;
+  averagePercentage = totalPercentage / studentData.length;
+
+  if (highPercentage < percentage) {
+    highPercentage = percentage;
+    topPerformer = name;
   }
 
-  avegragePercentage = (totalMarks * 100) / 1500;
+  if (percentage < 70) {
+    below70.push(name);
+  }
 
-  info += `${i + 1}. ${name} - total:${total} | percentage: ${Math.floor(
-    percentage
-  )}% | grade:${grade}\n`;
+  if (attendance < 75) {
+    below75Attendance.push(name);
+  }
+
+  studentperformance += `${id}. ${name} - Total: ${total} | Percentage: ${percentage.toFixed(
+    2
+  )}% | Grade: ${grade}\n`;
 });
 
-console.log(
-  `
+const result = `
 --------------------------------------------
            CLASS REPORT - AUG 2025
 --------------------------------------------
-Individual Performance:\n`,
-  info
-);
 
-/*Class Summary:
-- Class Average percentage: 76.6%
-- Top Performer: Sneha Patel (91%)
-- Students Below 70%: Rohan Mehta, Kabir Khan
-- Students with Low Attendance (<75%): Kabir Khan */
+Individual Performance:
+${studentperformance}\n
+-------------------------------------------
+Class Summary:
+- Class Average Percentage: ${averagePercentage.toFixed(2)}%
+- Top Performer:${topPerformer}(${highPercentage.toFixed(2)}%)
+- Students Below 70%: ${below70}
+- Students with Low Attendance (<75%): ${below75Attendance}
+--------------------------------------------`;
+fs.writeFileSync("output.txt", result, "utf-8");
