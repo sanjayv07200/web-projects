@@ -1,0 +1,7 @@
+
+-----------------------------------------
+         E-COMMERCE ORDER REPORT
+-----------------------------------------
+Total Revenue: ₹23000
+Total Orders: 3
+Unique Customers: 2
