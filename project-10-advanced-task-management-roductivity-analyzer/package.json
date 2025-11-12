@@ -1,9 +1,9 @@
 {
-  "name": "project-07-movie-recommendation-engine",
+  "name": "project-10-advanced-task-management-roductivity-analyzer",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "command" : "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

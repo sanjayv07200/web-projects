@@ -1,0 +1,30 @@
+-------------------------------------------------
+        TASK MANAGEMENT ANALYTICS REPORT
+-------------------------------------------------
+Total Tasks: 5
+Status Breakdown:
+- In-Progress: 2
+- Pending: 1
+- Overdue: 0
+
+Priority Breakdown:
+- High: 3
+- Medium: 1
+- Low: 1
+
+Time Insights:
+- Total Time Spent: 27 hours
+- Average Time per Task: 5.4 hours
+- Most Time Spent: "Complete JavaScript Roadmap" (12 hours)
+
+Efficiency:
+- Completed Tasks: 2/5 (40%)
+
+Deadlines:
+- Urgent: "Prepare DSA Notes" due in 2 days (High Priority)
+- Upcoming: "Write React Documentation" due in 4 days
+-------------------------------------------------
+Suggestions:
+- Focus on completing high-priority tasks first.
+- Review time spent to balance workload.
+-------------------------------------------------

@@ -1,0 +1,23 @@
+-----------------------------------------
+        SOCIAL MEDIA POST ANALYZER
+-----------------------------------------
+Total Posts: 4
+Unique Users: 3
+
+Top Contributors:
+1. Aarav - 2 posts
+2. Sneha - 1 post
+3. Riya - 1 post
+
+Trending Hashtags:
+- #JavaScript (3 times)
+- #Coding (2 times)
+- #NodeJS (1 time)
+- #React (1 time)
+
+Most Used Words (Excluding Stopwords):
+- javascript (3)
+- coding (2)
+- practice (1)
+- nodejs (1)
+-----------------------------------------
