@@ -1,0 +1,184 @@
+{
+  "members": {
+    "ajay-9876543210": {
+      "id": "ajay-9876543210",
+      "name": "Ajay Sinha",
+      "address": "Patna, Bihar",
+      "phone": "9876543210",
+      "issus": ["Issue-ISBN010", "Issue-ISBN002"]
+    },
+    "rohi-9123456780": {
+      "id": "rohi-9123456780",
+      "name": "Rohit Verma",
+      "address": "Kolkata, West Bengal",
+      "phone": "9123456780",
+      "issus": []
+    },
+    "sneh-9812345678": {
+      "id": "sneh-9812345678",
+      "name": "Sneha Kapoor",
+      "address": "Delhi",
+      "phone": "9812345678",
+      "issus": []
+    },
+    "meer-9001234567": {
+      "id": "meer-9001234567",
+      "name": "Meera Chawla",
+      "address": "Mumbai, Maharashtra",
+      "phone": "9001234567",
+      "issus": []
+    },
+    "vikr-9797979797": {
+      "id": "vikr-9797979797",
+      "name": "Vikram Patel",
+      "address": "Ahmedabad, Gujarat",
+      "phone": "9797979797",
+      "issus": []
+    },
+    "sanj-9876543210": {
+      "id": "sanj-9876543210",
+      "name": "Sanjay Vasuniya",
+      "address": "Ahmedabad",
+      "phone": "9876543210",
+      "issus": []
+    },
+    "rohi-9123456789": {
+      "id": "rohi-9123456789",
+      "name": "Rohit Sharma",
+      "address": "Mumbai",
+      "phone": "9123456789",
+      "issus": ["Issue-ISBN003", "Issue-ISBN002"]
+    },
+    "anja-9988776655": {
+      "id": "anja-9988776655",
+      "name": "Anjali Mehta",
+      "address": "Bangalore",
+      "phone": "9988776655",
+      "issus": []
+    },
+    "vikr-9900112233": {
+      "id": "vikr-9900112233",
+      "name": "Vikram Singh",
+      "address": "Chennai",
+      "phone": "9900112233",
+      "issus": []
+    },
+    "priy-9878901234": {
+      "id": "priy-9878901234",
+      "name": "Priya Reddy",
+      "address": "Hyderabad",
+      "phone": "9878901234",
+      "issus": []
+    },
+    "arju-9765432109": {
+      "id": "arju-9765432109",
+      "name": "Arjun Verma",
+      "address": "Pune",
+      "phone": "9765432109",
+      "issus": []
+    },
+    "kavi-9654321098": {
+      "id": "kavi-9654321098",
+      "name": "Kavita Joshi",
+      "address": "Kolkata",
+      "phone": "9654321098",
+      "issus": []
+    },
+    "rake-9543210987": {
+      "id": "rake-9543210987",
+      "name": "Rakesh Kumar",
+      "address": "Noida",
+      "phone": "9543210987",
+      "issus": []
+    },
+    "neha-9432109876": {
+      "id": "neha-9432109876",
+      "name": "Neha Sharma",
+      "address": "Lucknow",
+      "phone": "9432109876",
+      "issus": []
+    }
+  },
+  "books": {
+    "ISBN001": {
+      "isbn": "ISBN001",
+      "name": "JavaScript: The Good Parts",
+      "auther": "Douglas Crockford",
+      "issue_id": ""
+    },
+    "ISBN002": {
+      "isbn": "ISBN002",
+      "name": "JavaScript Essentials",
+      "auther": "Kyle Simpson",
+      "issue_id": "Issue-ISBN002"
+    },
+    "ISBN003": {
+      "isbn": "ISBN003",
+      "name": "Clean Code",
+      "auther": "Robert C. Martin",
+      "issue_id": "Issue-ISBN003"
+    },
+    "ISBN004": {
+      "isbn": "ISBN004",
+      "name": "You Don’t Know JS",
+      "auther": "Kyle Simpson",
+      "issue_id": ""
+    },
+    "ISBN005": {
+      "isbn": "ISBN005",
+      "name": "Eloquent JavaScript",
+      "auther": "Marijn Haverbeke",
+      "issue_id": ""
+    },
+    "ISBN006": {
+      "isbn": "ISBN006",
+      "name": "Introduction to Algorithms",
+      "auther": "Thomas H. Cormen",
+      "issue_id": ""
+    },
+    "ISBN007": {
+      "isbn": "ISBN007",
+      "name": "Design Patterns",
+      "auther": "Erich Gamma",
+      "issue_id": ""
+    },
+    "ISBN008": {
+      "isbn": "ISBN008",
+      "name": "JavaScript Patterns",
+      "auther": "Stoyan Stefanov",
+      "issue_id": ""
+    },
+    "ISBN009": {
+      "isbn": "ISBN009",
+      "name": "Refactoring",
+      "auther": "Martin Fowler",
+      "issue_id": ""
+    },
+    "ISBN010": {
+      "isbn": "ISBN010",
+      "name": "Cracking the Coding Interview",
+      "auther": "Gayle Laakmann McDowell",
+      "issue_id": ""
+    }
+  },
+  "issues": {
+    "Issue-ISBN002": {
+      "id": "Issue-ISBN002",
+      "isbn": "ISBN002",
+      "member_id": "rohi-9123456789",
+      "iat": "Wed Nov 19 2025"
+    },
+    "Issue-ISBN003": {
+      "id": "Issue-ISBN003",
+      "isbn": "ISBN003",
+      "member_id": "rohi-9123456789",
+      "iat": "Wed Nov 19 2025"
+    },
+    "Issue-ISBN010": {
+      "id": "Issue-ISBN010",
+      "isbn": "ISBN010",
+      "member_id": "ajay-9876543210",
+      "iat": "Sun Nov 16 2025"
+    }
+  }
+}
